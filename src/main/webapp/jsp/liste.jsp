@@ -9,13 +9,23 @@
 </head>
 <body>
 <a href="/">Revenir au menu principal</a><br><br>
-
+<%--
 <ul>
     <c:forEach items="${listfilms}" var="film">
         <li>
 
                     ${film.titre}
 
+        </li>
+    </c:forEach>
+</ul>
+--%>
+<ul>
+    <c:forEach items="${listfilms}" var="chaquefilm">
+        <li>
+            <a href="/DetailsFilm ${chaquefilm.id}">
+                    ${chaquefilm.titre}
+            </a>
         </li>
     </c:forEach>
 </ul>

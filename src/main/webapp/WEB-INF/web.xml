@@ -14,6 +14,16 @@
         <servlet-class>fr.laerce.cinema.liste</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>DetailsFilm</servlet-name>
+        <servlet-class>fr.laerce.cinema.DetailsFilm</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DetailsFilm</servlet-name>
+        <url-pattern>/DetailsFilm</url-pattern>
+    </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>affiche</servlet-name>
         <url-pattern>/affiche</url-pattern>
